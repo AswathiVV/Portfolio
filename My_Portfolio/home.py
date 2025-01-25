@@ -1,10 +1,19 @@
-from flask import Flask,render_template
-# import sqlite3
-# import tkinter
-app= Flask(__name__)
+# from flask import Flask,render_template
+
+# app= Flask(__name__)
+
+# @app.route('/')
+# def fun1():
+#     return render_template("index.html")
+
+# app.run()
+from flask import Flask, render_template
+
+app = Flask(__name__)
 
 @app.route('/')
-def fun1():
-    return render_template("index.html")
+def home():
+    return render_template('index.html')
 
-app.run()
+if __name__ == '__main__':
+    app.run(debug=True)
