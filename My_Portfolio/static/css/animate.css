@@ -7,6 +7,114 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 Copyright (c) 2015 Daniel Eden
 */
 
+.skills-section {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #f8f4f4;
+}
+
+.skill-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.skill {
+  width: 30%; 
+  text-align: left;
+  color: #e6e6e6;
+  /* padding-left: 14px; */
+}
+
+.skill-bar {
+  width: 60%;
+  background-color: #e6e6e6;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.fill {
+  height: 12px; 
+  width: 0%;
+  background-color: rgb(17, 119, 153);
+  transition: width 2s ease-in-out;
+}
+
+.percentage {
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+  margin-left: 15px; 
+}
+
+.skill-container .skill, .skill-container .percentage {
+  display: flex;
+  align-items: center;
+}
+
+.skill-container .percentage {
+  margin-left: 10px; 
+}
+
+
+
+/* .skills-section {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #f8f4f4;
+}
+
+.skill-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.skill {
+  width: 40%;
+  text-align: left;
+  color: #e6e6e6;
+}
+
+.skill-bar {
+  width: 50%;
+  background-color: #e6e6e6;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.fill {
+  height: 10px;
+  width: 0%;
+  background-color:rgb(17, 119, 153);
+  transition: width 2s ease-in-out;
+}
+
+.percentage {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+} */
+
+
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
