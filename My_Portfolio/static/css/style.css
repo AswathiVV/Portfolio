@@ -1,13 +1,10 @@
-/* General Styles */
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
   margin: 0;
-  /* background-color: #000; */
-  color: white;
+  /* color: rgb(2, 2, 2); */
   overflow-x: hidden;
 }
 
-/* Navbar */
 .navbar {
   background: transparent;
   border: none;
@@ -38,7 +35,6 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-/* Hero Section */
 .site-hero {
   height: 100vh;
   background-size: cover;
@@ -57,7 +53,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* Black overlay */
+  background: rgba(0, 0, 0, 0.6); 
   z-index: -1;
   filter: grayscale(100%); /* Black and white effect */
 }
@@ -82,7 +78,250 @@ body {
   letter-spacing: 2px;
 }
 
+
+
+
+/* ----------------------------------------- */
+
+
+.skills-section {
+  background-color: #333; 
+  padding: 50px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.skills-section h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.skill-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.skill {
+  width: 150px;
+  font-size: 18px;
+  color: #ccc;
+  font-weight: 500;
+}
+
+.skill-bar {
+  flex: 1;
+  background-color: #444;
+  height: 10px;
+  border-radius: 5px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.fill {
+  height: 100%;
+  background-color: #5882af; 
+  border-radius: 5px;
+  transition: width 1s ease-in-out;
+}
+
+.percentage {
+  width: 50px;
+  font-size: 18px;
+  color: #fff;
+  text-align: right;
+}
+/* -------------------------------------------------------- */
+
+
+
+
+.about-container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+  /* background-color: black; */
+}
+
+.profile {
+  flex: 1;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #ddd;
+}
+
+.bio {
+  flex: 2;
+  padding-left: 20px;
+}
+.bio .name {
+  font-weight: bolder;
+}
+
+.bio h1 {
+  font-size: 2.5rem;
+  margin-bottom: 19px;
+  color: #333;
+  text-align: center;
+}
+
+.bio .intro {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.bio .details {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.bio .skills-heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.bio .skills-list {
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+.bio .skills-list li {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+  background-color: #0056b3;
+}
+
 /* Responsive Styles */
+@media (max-width: 768px) {
+  .about-me {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .profile-pic {
+      width: 150px;
+      height: 150px;
+  }
+
+  .bio {
+      padding-left: 0;
+  }
+
+  .bio h1 {
+      font-size: 2rem;
+  }
+
+  .bio .intro {
+      font-size: 1rem;
+  }
+
+  .bio .details {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bio .skills-list li {
+      font-size: 0.9rem;
+  }
+
+  .bio .skills-heading {
+      font-size: 1rem;
+  }
+
+  .contact-btn {
+      font-size: 0.9rem;
+  }
+}
+
+/* --------------------------------------------- */
+@media (max-width: 768px) {
+  .skills-section {
+      padding: 30px 15px;
+  }
+
+  .skills-section h2 {
+      font-size: 28px;
+  }
+
+  .skill-container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .skill-bar {
+      width: 100%;
+      margin: 10px 0;
+  }
+
+  .percentage {
+      width: auto;
+      margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .skills-section {
+      padding: 20px 10px;
+  }
+
+  .skills-section h2 {
+      font-size: 24px;
+  }
+
+  .skill {
+      font-size: 16px;
+  }
+
+  .fill {
+      height: 8px;
+  }
+
+  .percentage {
+      font-size: 16px;
+  }
+}
+
+/* --------------------------------------- */
+
 @media (max-width: 991px) {
   .navbar .nav-link {
       font-size: 0.9rem;
