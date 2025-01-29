@@ -35,9 +35,6 @@ body {
 }
 
 .site-hero {
-  /* padding: 100px 0;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.6);  */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -50,11 +47,10 @@ body {
 
 }
 .site-hero img{
-  /* object-fit: cover; */
   width: 250px;
   height: 300px;
   object-fit: cover;
-  border-radius: 10px; /* Slightly rounded corners */
+  border-radius: 10px; 
   border: 4px solid #fff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   margin-bottom: 20px;
@@ -73,20 +69,20 @@ body {
 .site-heading {
   font-size: 2rem;
   font-weight: 600;
-  color: #dfdbdb;
+  color:white;
 }
 
 .site-name {
   font-size: 3rem;
   font-weight: 700;
   margin-top: 0.5rem;
-  color: #cdc6c6;
+  color:white;
 }
 
 .site-subheading {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-top: 1rem;
-  color: #dad5d5;
+  color: white;
 }
 
 /* ----------------------------------------- */
