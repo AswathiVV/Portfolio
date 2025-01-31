@@ -452,8 +452,46 @@ color: #fff;
 #contactForm button:hover {
   background-color: #e67e22;
 }
+.footer {
+  background-color: #1d1c1c; 
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px; 
+  font-size: 14px;
+}
 
-/* Responsive Design */
+.footer p {
+  margin-bottom: 10px; 
+}
+
+.social-icons {
+  color: white;
+  display: flex;
+  justify-content: center; 
+  gap: 22px; 
+}
+
+.social-icons a {
+  color: #fff; 
+  font-size: 30px; 
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #4db8ff; 
+}
+
+@media (max-width: 768px) {
+  .footer {
+    font-size: 12px;
+    padding: 15px 5px;
+  }
+
+  .social-icons a {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 768px) {
   #contact {
       padding: 40px 10px;
@@ -486,10 +524,6 @@ color: #fff;
       width: 300px;
       height: 300px;
   }
-
-  /* .navbar-toggler {
-      background-color: #ff6347;
-  } */
 
   .navbar-nav .nav-link {
       font-size: 1.2rem;
@@ -536,24 +570,6 @@ color: #fff;
 
 /* --------------------------------------------------------------------------*/
 
-/* @media (max-width: 768px) {
-  .portfolio-section h2 {
-      font-size: 2rem;
-  }
-
-  .overlay h3 {
-      font-size: 1.3rem;
-  }
-
-  .overlay p {
-      font-size: 0.9rem;
-  }
-
-  .portfolio-project .project-title {
-      font-size: 1rem;
-  }
-} */
-/* --------------------------------------------------------------------- */
 @media (max-width: 768px) {
   .skill-container {
       flex-direction: column;
