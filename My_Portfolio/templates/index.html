@@ -29,7 +29,7 @@
             </div>
         </div>
     </nav>
-	<section class="site-hero" id="section-home" style="background-image: url(static/images/bg3.jpg);">
+	<section class="site-hero" id="section-home">
         <div class="container">
             <div class="row intro-text align-items-center justify-content-center">
                 <div class="col-md-10 col-sm-12 text-center">
@@ -46,14 +46,11 @@
 
 	<section class="about-me" id="section-about">
         <div class="container about-container">
-            <div class="profile">
-                <img src="static/images/me11.jpg" alt="Your Name" class="profile-pic">
-            </div>
+            
             <br>
             <div class="bio">
                 <h1>About Me</h1>
 				<p class="intro">Hello, I’m Aswathi V V, a web developer with expertise in building high-performance, user-centric websites and applications. I specialize in both front-end and back-end development, delivering scalable and efficient solutions that enhance user experience. Passionate about problem-solving and using the latest technologies, I strive to create impactful digital products that meet the highest standards of quality.</p>
-                <!-- <p class="intro">Hello! I'm <span class="name">Aswathi V V</span>, a passionate web developer dedicated to creating engaging, user-friendly websites and applications. With a keen eye for design and a love for solving problems, I bring ideas to life on the web.</p>  -->
                 <section class="service">
                     <h2 class="service-title">What I'm Doing</h2>
                     <ul class="service-list">
@@ -99,54 +96,62 @@
         </div>
     </section>
 
-	<section id="section-resume">
-		<div class="resume-container">
-			<h2>My Resume</h2>
-			<p>Click below to either view or download my resume.</p>
-	
-			<a href="path/to/your/resume.pdf" target="_blank" class="btn"><i class="bi bi-download"></i>View My Resume</a>
-		</div>
-	</section>
-	
-	<div class="skills-section">
-		<h2>Skills</h2>
-		<div class="skill-container">
-			<div class="skill">HTML</div>
-			<div class="skill-bar">
-				<div class="fill" data-percentage="95"></div>
-			</div>
-			<div class="percentage">95%</div>
-		</div>
-		<div class="skill-container">
-			<div class="skill">CSS</div>
-			<div class="skill-bar">
-				<div class="fill" data-percentage="85"></div>
-			</div>
-			<div class="percentage">85%</div>
-		</div>
-		<div class="skill-container">
-			<div class="skill">JavaScript</div>
-			<div class="skill-bar">
-				<div class="fill" data-percentage="85"></div>
-			</div>
-			<div class="percentage">85%</div>
-		</div>
-		<div class="skill-container">
-			<div class="skill">Python</div>
-			<div class="skill-bar">
-				<div class="fill" data-percentage="90"></div>
-			</div>
-			<div class="percentage">90%</div>
-		</div>
-		<div class="skill-container">
-			<div class="skill">SQLite3</div>
-			<div class="skill-bar">
-				<div class="fill" data-percentage="90"></div>
-			</div>
-			<div class="percentage">90%</div>
-		</div>
-	</div>
-	
+    <section id="section-resume">
+        <div class="resume-container">
+            <h2>My Resume</h2>
+            <p>Click below to view or download my resume.</p>
+    
+            <div class="resume-buttons">
+                <a href="path/to/your/resume.pdf" target="_blank" class="btn view-btn">
+                    <i class="bi bi-eye"></i> View Resume
+                </a>
+                <a href="path/to/your/resume.pdf" download class="btn download-btn">
+                    <i class="bi bi-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+    
+
+    <div class="skills-section">
+        <h2 class="skills-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <img src="static/images/html5.jpg" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="skill-item">
+                <img src="static/images/css.jpg" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="skill-item">
+                <img src="static/images/js.jpg" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-item">
+                <img src="static/images/python.jpg" alt="Python">
+                <p>Python</p>
+            </div>
+            <div class="skill-item">
+                <img src="static/images/bstp.jpg" alt="bs">
+                <p>Bootstrap</p>
+            </div>
+            <div class="skill-item">
+                <img src="static/images/dj.jpg" alt="dj">
+                <p>Django</p>
+            </div>
+            <div class="skill-item">
+                <img src="static/images/react.jpg" alt="react">
+                <p>React</p>
+            </div>
+            <div class="skill-item">
+                <img src="static/images/sql.jpg" alt="sql">
+                <p>MySQL</p>
+            </div>
+        </div>
+    </div>
+    
+
 	<section class="portfolio-section" id="section-portfolio">
         <h2>My Projects</h2>
         <div class="portfolio-grid">
@@ -192,10 +197,10 @@
         </div>
     </section>
 
-	<section id="contact">
+	<section id="section-contact">
         <div class="container">
             <h1 data-aos="zoom-in" data-aos-duration="1500">
-                <i class="fa-solid fa-headset"></i>&nbsp;&nbsp;Contact Me
+                Contact Me
             </h1>
 
             <form action="/send_mail" id="contactForm" method="POST" data-aos="fade-up" data-aos-duration="1500">
